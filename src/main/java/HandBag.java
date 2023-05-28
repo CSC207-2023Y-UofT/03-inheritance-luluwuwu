@@ -20,7 +20,7 @@ public class HandBag extends Bag{
          * This is how we call the parent's constructor
          * The Python equivalent is super().__init__(...)
          */
-        super(color, capacity);
+        Bag(color, capacity);
     }
 
     /**
@@ -34,5 +34,6 @@ public class HandBag extends Bag{
          *
          * To call a method defined in a parent, you use super.method_name(...)
          */
+        super.increaseCapacity(1);
     }
 }
